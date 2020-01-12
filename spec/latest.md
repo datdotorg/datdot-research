@@ -1,27 +1,53 @@
-# datdot `v0.0.4-formalized@2019-10-19`
-(prepared between `2019-10-17 and 2019-10-19`)
+# datdot `v0.0.5-summary@2019-10-29`
 
-**=> [previous spec](./v0.0.3-refined@2019-10-15.md)**
+**=> [previous spec](./v0.0.4-formalized@2019-10-19.md)**
 
-## ADD IDEA OF `supporters`
+## economic model
+
+### Actors
+- pinners (seeders)
+    - register to become pinners
+    - get random dats to pin
+    - they get ratiofor their work
+- authors (requesters)
+    - they submit hypercors to be pinned
+- node operators (should be seeders)
+    - run substrate node
+    - have to have enough disk space
+    - reliable connection
+    - get +ratio only when they seed (+ratio every time proof of storage = succesful challenge succeeds )
+    - paid in freshly minted ratio
 - data consumers (public)
-  - reads the data
-  - may incentivise the hosting of archives they care about. 
-* **challenge:**
-  - it burns [incentivisors] ~~creators~~ tokens when their data is pinned (payment)
+    - reads the data
+    - may incentivise the hosting of archives they care about. 
 
-## Performance optimization idea:
-* Instead of SIGNER encrypting chunks with their private key,
- they encrypt each chunk with a new random secret key,
- and then encrypt that secret key with their private key and prepend it to the chunk it decrypts
- (consider: they also prepend their public key)  - a new merkle tree is calculated for these
- prefixed-chunks, which is used for challenge-responses. 
-* **COUNTERPOINT:** the pinners can decrypt the secret key a single time,
- and from then on outsource the data from the Dat network.
- In order to respond to challenges, they will need to have calculated the merkle tree at least once,
- but after that they can just keep the key and tree and dump the majority of the chunk data. 
+### challenge
+- responding with the merkle proof from the dat archives
 
-## datdot "architecture" as SEQUENCE DIAGRAM (first draft)
+### tokens
+- minted if you are seeding (earning)
+- it burns incentivisors ratio when their data is pinned (payment)
+ => not only authors, but any peer who "stakes" their "ratio" on a specific seeded hypercore can burns their ratio, while the seeder get +ratio minted
+
+### price/economic part
+- when you submit the dat you also decide how much you're willing to pay
+ (=burn) in terms of ratio...
+- priority: who pays more? who has more tokens (coz they are good pinners)?
+
+
+## `ratio` unit
+1. We will use the `balances` (SRML) module to:
+    * create a simple "credit based" system
+    * by pinning random hypercores you mint ratio for yourself, by having your archive pinned, you burn ratio
+    * when you submit a hypercore you also set the price you're willing to pay for the service
+ regarding your ratio, unless we find a way to calculate that price automatically
+    * priority service: users who pin more have priority to get their data pinned first, but even users with no ratio get pinned, but just less often
+
+**addendum:**
+* the pinned data is pinned forever, unless there are not enough pinners to provide disk space, then eventually the peers with higher ratios get prioritised
+* ...
+
+## datdot "architecture" as SEQUENCE DIAGRAM
 To see the `sequence diagram` use `mermaid` as supported by https://hackmd.io by copy and pasting the below code snippet:
 
 ```sequence
