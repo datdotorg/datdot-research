@@ -1,42 +1,85 @@
-# datdot `v0.0.0-initial@2019-08-23`
+# datdot `v0.0.1-grantPreparation@2019-09-10`
 
-## P2P hosting jam :-)
-**use**
-* [Substrate IDE](https://polkadot.js.org/apps/)
-* [Substrate: The platform for blockchain innovators](https://github.com/paritytech/substrate)
-* [Dat Protocol](https://www.datprotocol.com/)
+**=> [previous spec](./v0.0.0-initial@2019-08-23.md)**
 
----
-
-### SRML (=modules) (=pallets)
-* `balances ~~or `generic-asset`~~
-* ~~`staking`~~
-* `dat-verify`
-* `sudo`
-* ~~`service-core`~~
+# GRANT - Filecoin for Dat protocol
+- substrate node
+    - randomly selects archives and emits events
+    - verifies data coming in from the service
+    - how does the node run? (docker?)
+- javascript service
+    - listening for events on the node
+    - submitting data to the node (proofs and archives)
+- UI
+    - registering availability and requesting pinning
 
 ---
 
-## How to use `balances`
-Simple credit based system - by pinning you mint credits, by having your archive pinned, you burn credits. Mint amount should be > than the burn amount to solve bootstrapping. (the burn amount should be defined by a market)
+### Actors
+- **pinners (seeders)**
+    - register to become pinners
+    - get random dats to pin
+    - they get paid for their work
+- **dat creators (requestors)**
+    - they submit dats to be pinned
+- **node operators (should be seeders)**
+    - run substrate node
+    - have to have enough disk space
+    - reliable connection
+    - get paid only when they seed (proof = succesful challenge )
+    - paid in tokens (minted when each payment needs happen)
+- **data consumers (public)**
+    - reads the data
 
 ---
 
-## proof-of-storage idea
+### challenge
+- responding with the merkle proof from the dat archives
 
-### in `block n` (for each assigned `archive m`)
-1. where `randomNumber = hash(System::random_seed() + some nonce/account data + m)`
-2. We need to get `feed.signature(randomNumber)` and `feed.rootHashes(randomNumber)` from `hypercore.js`
-    
-### in `block n+x`
-1. init Storage
-2. call `Storage::put_node` with output of `feed.rootHashes` as the inputs and then use that `Storage` to build a feed with `FeedBuilder`)
-3. verify with `Feed::verify()` in `hypercore.rs`
+### tokens
+- minted if you are seeding (earning)
+- it burns creators' tokens whe their data is pinned (payment)
+
+### price/economic part
+- when you submit the dat you also decide how much you're willing to pay
+- priority: who pays more? who has more tokens (coz they are good pinners)?
 
 ---
 
-## Action Items
-* Use polkadot.js.org api and hypercore js libraries to encode and decode hypercores [let's call this adapter.js or something] 
-* Use dat sdk or dat-store's service.js to communicate with  adapter.js
-* Use datrs (or something inspired by it) to verify hypercores in substrate runtime
-* Write a basic module that calls balances to mint and burn balances based on the outcomes of dat-verify
+## milestones
+
+#### Month 1
+- no economics
+- no UI
+- substrate logic (node)
+- js service that reacts to the node
+
+#### Month 2
+- add UI
+- implement basic economic model
+- community test
+
+#### Month 3
+- improving economic model
+- documentation
+
+--- 
+
+## Pitch
+
+### Problem:
+**Dynamic datasets** with immutable history - it's hard to have guarantees about their availability. 
+
+If we want to keep data available and up to date -> we have to keep our computer running or we have to rent a server. 
+
+### Challenges:
+What if you want other people to help you seed your data?
+- what incentives do they have?
+- how to find them and to trust them?
+- how to verify they are seed our data?
+
+### Solution:
+
+**Subtrate node**
+- Enables arbitrary logic on 
+- without having to rely on centralized party
