@@ -52,7 +52,7 @@ slideOptions:
 
 ### [idea](#/1)
 **make a free p2p alternative to [hashbase.io](https://hashbase.io)**
-* everyone who downloads and runs **`datdot`** offers some free disk space which is used to permanently seed hypercores datdot users submit to the `datdot` network 
+* everyone who downloads and runs **`datdot`** offers some free disk space which is used to permanently seed hypercores datdot users submit to the `datdot` network
 
 ----
 
@@ -99,8 +99,8 @@ malicious users can still cheat the `datdot` network
 ----
 
 ### fix [`self service attack`](#/1)
-Assign hypercores submitted to `datdot` for seeding to random seeder peers, so peers who want to seed cannot cherry pick the chunks they want to seed.  
-In order to prevent malicious user to accumulate node pairs they control where the randomly picked seeder happened to be under their control too, re-enabeling the self-service attack, we frequently enough re-shuffle which nodes seeds which data. 
+Assign hypercores submitted to `datdot` for seeding to random seeder peers, so peers who want to seed cannot cherry pick the chunks they want to seed.
+In order to prevent malicious user to accumulate node pairs they control where the randomly picked seeder happened to be under their control too, re-enabeling the self-service attack, we frequently enough re-shuffle which nodes seeds which data.
 
 ----
 
@@ -203,7 +203,7 @@ negative reputation does not exist
 2. all submitted/selected hypercores get seeded forver if possible
 3. if seeders can not provide enough disk space to seed hypercores
     * existing hypercores submitted/selected by peers with lower ratio get prioritized when dropping duplicates or making them entirely unavailable
-    * prioritizing means the random selection of a peer gets weighted so the likelihood of selecting a particular peer is higher 
+    * prioritizing means the random selection of a peer gets weighted so the likelihood of selecting a particular peer is higher
 
 ----
 
@@ -271,7 +271,7 @@ SIGNER --> PINNER         : send all signed chunks to related PINNER
 PINNER --> CHAIN          : announce retrieval success of signed chunks
 CHAIN  --> SUPPORTERS     : update dashboard with successful pinning
 CHAIN --> SIGNER          : mint X for successful challenge to SIGNER
-Note over CHAIN           : while pinning is active, repeat regularly: 
+Note over CHAIN           : while pinning is active, repeat regularly:
 CHAIN --> PINNER          : request random signed chunk to verify
 CHAIN --> VERIFIER        : randomly select verifier for PINNER
 Note over VERIFIER        : Check PINNER is sending chunks to swarm and measure
