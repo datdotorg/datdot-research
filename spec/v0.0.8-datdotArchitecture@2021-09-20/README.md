@@ -1,12 +1,6 @@
 # DATDOT NODE ARCHITECTURE
 
-**=> [previous spec](../v0.0.8-datdotArchitecture@2021-09-20.md)**
-
-## @TODO: merge this information into next iteration of the spec
-* [ ] include details from previous spec iteration:
-* [ ] include information below
-* [ ] include information from `./BRAINSTORMING`
-
+**=> [previous spec](../v0.0.7-grantMergeAccept@2019-12-04.md)**
 
 ## PARTS
 1. chain (substrate node)
