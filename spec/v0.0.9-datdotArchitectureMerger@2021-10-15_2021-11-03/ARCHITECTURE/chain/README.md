@@ -1,17 +1,123 @@
 # chain
-**[main](../README.md)**
+**[main](../../README.md)**
 
 **use**
 * [Substrate IDE](https://polkadot.js.org/apps/)
 * [Substrate: The platform for blockchain innovators](https://github.com/paritytech/substrate)
 
 
+----
+
+#### ARCHITECTURE
+1. a network of many nodes
+2. user makes transaction in frontend and sends it to their node
+
+3. node receives an "pending extrinsic"
+4. broadcasts it to the rest of the network
+5. those are received by other nodes
+
+4. block producer(s) are selected
+5. pending extrinsics are added block
+6. blocks are sent out to all nodes
+7. when they receive it they execute the blocks extrinsics them and mutate/add them to their nodes state
+8. ...start over...
+
+###### algos
+0. [node-loop](./algos/node-loop.md)
+1. [block generator](./algos/block-generator.md)
+2. [measure-and-match](./algos/measure-and-match.md)
+3.
+
+----
+
+###### chain public api (EXTRINSICS + EVENTS)
+
+```js
+// const MAIN_TYPES = { // MAIN
+//   batch,
+//   make,//_account,
+//   give,//_to_account,
+//   register,//_feed,
+//   offer,//_service,
+//   provide,//_service,
+//   request,//_service,
+// }
+
+// 15 Extrinsics
+on('account_create', data => { })
+on('account_update', data => { })
+on('account_delete', data => { })
+on('roles_register', data => { })
+on('roles_unregister', data => { })
+on('plan_subscribe', data => { })
+on('plan_update', data => { })
+on('plan_pause', data => { })
+on('plan_resume', data => { })
+on('plan_unsubscribe', data => { })
+on('hosting_setup_report', (report) => { })
+on('proof_of_storage_request', (data) => { })
+on('proof_of_storage_response', (proof) => { })
+on('performance_benchmark', (data) => { })
+on('performance_benchmark_report', (rating) => { })
+// => triggered by service via:
+account_create()
+account_update()
+account_delete()
+roles_register()
+roles_unregister()
+plan_subscribe()
+plan_update()
+plan_pause()
+plan_resume()
+plan_unsubscribe()
+hosting_setup_report(report)
+proof_of_storage_request(data)
+proof_of_storage_response(proof)
+performance_benchmark_request(data)
+performance_benchmark_response(rating)
+
+
+// 8 Events
+emit('start-hosting')
+emit('repair-hosting')
+emit('end-hosting')
+emit('provide-proof-of-storage')
+emit('provide-performance-benchmark')
+emit('pause-plan')
+emit('resume-plan')
+emit('end-plan')
+// => observed by service via:
+on('start-hosting')
+on('repair-hosting')
+on('end-hosting')
+on('provide-proof-of-storage')
+on('provide-performance-benchmark')
+on('pause-plan')
+on('resume-plan')
+on('end-plan')
+```
+
+## ACTIONS
+```js
+// ACTIONS
+function _execute_plan () {}
+```
+
+
+## HELPERS
+```js
+function _merge_plan_update () {}
+function _hosting_start () {}
+function _hosting_repair () {}
+function _hosting_end () {}
+```
+
+-------------------------------------------------------------------------------
 ## PALLETS
 * `custom-balances`
 * `datdot-economics`
 * `hyper-verify`
 * `sudo`
-
 
 -------------------------------------------------------------------------------
 ### Pallet: `hyper-verify`

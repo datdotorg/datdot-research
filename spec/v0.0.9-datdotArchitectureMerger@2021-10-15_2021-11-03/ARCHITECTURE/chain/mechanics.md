@@ -118,3 +118,50 @@ peers with a worse ratio getting worse guarantees about having their hypercores 
     * for having my hypercores pinned?
 <!--     * when you submit a hypercore you also set the price you're willing to pay for the service regarding your ratio, unless we find a way to calculate that price automatically-->
 
+
+
+```js
+/* PRICE/payments
+
+JOBS:
+
+1. hosting_setup_attesting
+- resources per block (2 ratios per block)
+  - bandwidth
+  - cpu
+  - storage
+  - RAM
+- average duration in blocks: 7 => price: 14 ratios
+
+2. hosting_setup_encoding
+- resources per block (2.5 ratios per block)
+  - bandwidth
+  - cpu
+  - storage
+  - RAM
+- average duration in blocks: 5 => price: 12.5 ratios
+
+3. hosting_setup_hosting
+- resources per block (17 ratios per block)
+  - bandwidth
+  - cpu
+  - storage
+  - RAM
+- price: 17 ratios per block
+
+4. storage_verification_attesting
+- resources per block
+  - bandwidth
+  - cpu
+  - storage
+  - RAM
+
+5. perf_benchmark_attesting
+- resources per block
+  - bandwidth
+  - cpu
+  - storage
+  - RAM
+
+*/
+```

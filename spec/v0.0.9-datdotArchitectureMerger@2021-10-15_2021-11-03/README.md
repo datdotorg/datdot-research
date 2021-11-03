@@ -3,10 +3,10 @@
 **=> [previous spec](../v0.0.8-datdotArchitecture@2021-09-20.md)**
 
 ## @TODO: merge this information into next iteration of the spec
-* [ ] include details from previous spec iterations:
-  * [ ] v0.0.8
+* [x] include details from previous spec iterations:
+  * [x] v0.0.8
     * [x] include information from `README.md`
-    * [ ] include information from `./BRAINSTORMING`
+    * [x] include information from `./BRAINSTORMING`
   * [x] v0.0.7
   * [x] v0.0.6
   * [x] v0.0.5
@@ -40,9 +40,15 @@ A decentralized bridge between Dat Protocol and Substrate with a built-in incent
 
 
 ## ARCHITECTURE
-1. [chain (substrate node)](./chain/README.md)
-2. [service (javascript hyper based)](./service/README.md)
-3. [vault](./vault/README.md)
-4. [wallet](./wallet/README.md)
-5. [ui](./ui/README.md)
+1. [chain (substrate node)](./ARCHITECTURE/chain/README.md)
+2. [service (javascript hyper based)](./ARCHITECTURE/service/README.md)
+3. [vault](./ARCHITECTURE/vault/README.md)
+4. [wallet](./ARCHITECTURE/wallet/README.md)
+5. [ui](./ARCHITECTURE/ui/README.md)
 
+```js
+const chain = require('datdot-chain')
+const service = require('datdot-service')
+
+chain(service(chain))
+```
