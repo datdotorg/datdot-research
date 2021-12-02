@@ -1,21 +1,6 @@
 # DATDOT NODE SPEC
 
-**=> [previous spec](../v0.0.8-datdotArchitecture@2021-09-20/README.md)**
-
-## @TODO: merge this information into next iteration of the spec
-* [x] include details from previous spec iterations:
-  * [x] v0.0.8
-    * [x] include information from `README.md`
-    * [x] include information from `./BRAINSTORMING`
-  * [x] v0.0.7
-  * [x] v0.0.6
-  * [x] v0.0.5
-  * [x] v0.0.4
-  * [x] v0.0.3
-  * [x] v0.0.2
-  * [x] v0.0.1
-  * [x] v0.0.0
-
+**=> [previous spec](../v0.0.9-datdotArchitectureMerger@2021-10-15_2021-11-03/README.md)**
 
 ## Pitch: filecoin for dat/hypercore
 bridge (between Dat Protocol and Substrate)
@@ -40,15 +25,17 @@ A decentralized bridge between Dat Protocol and Substrate with a built-in incent
 
 
 ## ARCHITECTURE
-1. [chain (substrate node)](./ARCHITECTURE/chain/README.md)
-2. [service (javascript hyper based)](./ARCHITECTURE/service/README.md)
-3. [vault](./ARCHITECTURE/vault/README.md)
-4. [wallet](./ARCHITECTURE/wallet/README.md)
-5. [ui](./ARCHITECTURE/ui/README.md)
+1. [chain (substrate node)](./chain/README.md)
+2. [service (javascript hyper based)](./service/README.md)
+3. [vault](./vault/README.md)
+4. [wallet](./wallet/README.md)
+5. [ui](./ui/README.md)
 
 ```js
 const chain = require('datdot-chain')
 const service = require('datdot-service')
+
+// @TODO: refine this
 
 chain(service(chain))
 ```
