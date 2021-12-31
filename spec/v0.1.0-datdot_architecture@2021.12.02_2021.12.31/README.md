@@ -31,6 +31,12 @@ A decentralized bridge between Dat Protocol and Substrate with a built-in incent
 4. [wallet](./wallet/README.md)
 5. [ui](./ui/README.md)
 
+browser online => most insecure (= things can change while you visit the page)
+browser localhost => more secure (= things won't change while you visit if you don't confirm)
+datdot app: electron webapp => still secure (= but custom browser we maintain - so careful)
+datdot app: electron process => full power while running (=we have to be most careful, it has access to the users system)
+datdot app: daemons => full power all the time (these are already defined in scope and mostly implemented)
+
 ```js
 const chain = require('datdot-chain')
 const service = require('datdot-service')
@@ -39,3 +45,6 @@ const service = require('datdot-service')
 
 chain(service(chain))
 ```
+
+![architecture-diagram](./architecture-diagram.png)
+

@@ -1,3 +1,3 @@
-# datdot `v0.0.9-datdotArchitectureMerger@2021-10-15_2021-11-03`
+# datdot `v0.1.0-datdot_architecture@2021.12.02_2021.12.31`
 
-see [v0.0.9-datdotArchitectureMerger@2021-10-15_2021-11-03](./v0.0.9-datdotArchitectureMerger@2021-10-15_2021-11-03/README.md)
+see [v0.1.0-datdot_architecture@2021.12.02_2021.12.31](./v0.1.0-datdot_architecture@2021.12.02_2021.12.31/README.md)
