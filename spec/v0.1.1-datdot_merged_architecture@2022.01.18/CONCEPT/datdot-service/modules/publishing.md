@@ -19,6 +19,10 @@
   * saves `hypercore address` and `related publickey` on chain
 
 
+* [ ] check `2_publisher.md` might need upgrade to:
+  * `offer` - `supply` style API
+  * to properly register a new hypercore
+  *
 
 ## code
 

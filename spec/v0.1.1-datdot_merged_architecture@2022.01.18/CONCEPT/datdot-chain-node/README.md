@@ -1,6 +1,13 @@
 # datdot-chain-node
 substrate based blockchain node
 
+## design principles
+1. do as little as possible on chain
+2. do as much as possible off chain
+3. the long term goal is to remove the chain
+  * if ever possible
+
+
 # `playproject-io/datdot-pallet-*`
 
 

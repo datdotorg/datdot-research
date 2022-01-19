@@ -1,5 +1,11 @@
 # datdot-webapp
-https://github.com/ninabreznik/pinning-service-webpage
+formerly: https://github.com/ninabreznik/pinning-service-webpage
+
+now: https://github.com/playproject-io/datdot-ui
+and: https://github.com/datdotorg
+and: https://github.com/datdotorg/datdot-ui
+and: https://github.com/datdotorg/datdot-assets
+and: https://github.com/playproject-io/datdot-research/issues/4 (is specifically about the datdot-webapp)
 
 contains UI to interact with datdot gateway (service+chain)
 

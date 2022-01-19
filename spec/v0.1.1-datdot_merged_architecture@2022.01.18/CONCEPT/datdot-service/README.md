@@ -1,24 +1,21 @@
 # datdot-service
-manage dat hyper-*
+
+```js
+// (*) possible future implementation
 
 
-# `playproject-io/library`
-
-#### MODULE: `seeding_api`
-* **seeding api** JS modules to talk to "DAT STUFF"
-  * currently uses the main dat modules (hypercore, hyperswarm, ...)
-* support "dat health" module
-* handling the set of which archives are being seeded
-* API:
-  ```js
-  const seeding_api = require('datdot/seeding-api')
-  // module.exports = { makeHypercore, measureHealth, getOtherStuff, ... }
-  ```
-
-
-
-
-
+// chain_api.makeAccount('ALICE', ACCOUNT => {
+//   chain_api.register_seeder(ACCOUNT)
+//   chain_api.listen('seeder', DATA => {
+//     const core = seeding_api.seed(DATA)
+//     chain_api.listen('challenge', info, event => {
+//       core.getChunkAndMerkleData(info, DATA => {
+//         chain_api.submit(DATA)
+//       })
+//     })
+//   })
+// })
+```
 
 # `playproject-io/datdot-service`
 * [API](https://github.com/playproject-io/datdot-service/blob/master/index.js)
@@ -31,7 +28,7 @@ manage dat hyper-*
 * the rust code defines the input and output types
 * DEPENDENCIES:
   * `var chain_api = require('datdot-chain')`
-  * `var library_api = require('datdot-library')`
+  * `var library_api = require('datdot-library')` // datdot-service-agent // datdot-user
   * webapp `ui.html`
 * support permissions
 * [ ] `@TODO:` figure out if the localhost website can be embedded in regular HTTPS pages

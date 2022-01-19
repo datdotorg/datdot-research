@@ -8,13 +8,13 @@ latest work in progress version of API in mermaid [sequence diagrams](https://ha
 ```sequence
 Title: === USAGE: pin dat & prevent sybil/outsource attack ===
 
-participant hypercore consumer as CONSUMER       // dat reader
-participant hypercore author as AUTHOR
-participant hypercore supporter as SUPPORTERS   // also publisher -> decide on price/priority on publish
+participant block consumer as CONSUMER          // dat reader
+participant block author as AUTHOR
+participant block supporter as SUPPORTERS       // also publisher -> decide on price/priority on publish
 participant [dat swarm] as SWARM
 participant [datdot network] as CHAIN           // substrate node
-participant hypercore signer as SIGNER
-participant hypercore pinner as PINNER          // also hoster
+participant block signer as ENCODER
+participant block pinner as PINNER              // also hoster, or unpaid SEEDER for friends
 participant pinning validator as VERIFIER       // verifiying mints tokens for hosters and burns tokens for supporters
 
 Note over SUPPORTERS, AUTHOR   : usually AUTHOR might also be SUPPORTER
@@ -22,14 +22,14 @@ AUTHOR --> SWARM          : publish a hypercore [HC]
 PINNER --> CHAIN          : announce willingness to pin HCs
 SUPPORTERS --> CHAIN      : publish a HC address
 SUPPORTERS --> CHAIN      : donate datdots to HC address
-CHAIN --> SIGNER          : randomly select X SIGNERs to sign X HC copies
-CHAIN --> PINNER          : randomly select X PINNERs to store signed HCs
-SIGNER --> SWARM          : join dat to get & sign all hypercore chunks
-PINNER --> SWARM          : join dat to get all signed chunks from SIGNER
-SIGNER --> PINNER         : send all signed chunks to related PINNER
+CHAIN --> ENCODER         : randomly select X * R(edundancy) ENCODERs to sign X HC copies
+CHAIN --> PINNER          : randomly select X * R(edundancy) HOSTERS to store signed HCs
+ENCODER --> SWARM         : join dat to get & sign all hypercore chunks
+PINNER --> SWARM          : join dat to get all signed chunks from ENCODER
+ENCODER --> PINNER        : send all signed chunks to related PINNER
 PINNER --> CHAIN          : announce retrieval success of signed chunks
 CHAIN  --> SUPPORTERS     : update dashboard with successful pinning
-CHAIN --> SIGNER          : mint X for successful challenge to SIGNER
+CHAIN --> ENCODER         : mint X for successful challenge to ENCODER
 Note over CHAIN           : while pinning is active, repeat regularly:
 CHAIN --> PINNER          : request random signed chunk to verify
 CHAIN --> VERIFIER        : randomly select verifier for PINNER

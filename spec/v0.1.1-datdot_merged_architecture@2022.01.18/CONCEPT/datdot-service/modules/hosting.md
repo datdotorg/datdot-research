@@ -32,11 +32,11 @@ chainAPI.offerHosting(account, event => {
 ---------------------------------------------
 
 # SEEDING
-1. randomly select X ENCODERs to encode and compress X archive copies
+1. randomly select X * R(edundancy) ENCODERs to encode and compress X archive copies
   * When we select encoders and seeders from which pool do we select?
   * Do we select from all DatDot peers?
   * Or do we select from only those who registered as seeders?
-2. randomly select X SEEDERs to store encoded archives
+2. randomly select X * R(edundancy) SEEDERs to store encoded archives
   * Do we know how many copies/seeders we will select for each archive?
 3. What about for encoding, attestation...?
 

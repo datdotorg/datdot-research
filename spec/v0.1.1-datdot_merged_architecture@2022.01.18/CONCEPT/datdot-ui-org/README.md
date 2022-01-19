@@ -1,6 +1,10 @@
 # datdot-org
 main repo and desktop resembeling website
 
+check: https://github.com/datdotorg/datdot
+check: https://github.com/playproject-io/datdot
+and: https://github.com/datdotorg/datdot-assets
+
 # `playproject-io/datdot`
 
 **`landingpage`**

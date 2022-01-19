@@ -25,3 +25,10 @@ chainAPI.offerEncoding(account, event => {
 
 ## `@todo` - QUESTION - ENCODING - PROOF_OF_SERVICE - COMPRESSION
 * // 4. @TODO: So how do we now make the encoding super long and decoding super fast ?
+
+
+
+  * make direct connection between
+  * many ENCODER and one PINNER
+  * to send differently encoded chunks for same hypercore
+  * put attester in between
