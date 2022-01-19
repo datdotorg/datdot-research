@@ -2,6 +2,7 @@
 **[main](./README.md)**
 
 ## mitigate possible attacks
+latest work in progress version of API in mermaid [sequence diagrams](https://hackmd.io/mKQoDioEQMq-2CfAM7-Aiw?view)
 
 
 ```sequence
