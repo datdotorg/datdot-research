@@ -2,6 +2,7 @@
 serve localhost datdot page
 
 @TODO:
+* [ ] describe webkernel + web server spec
 * [ ] `@TODO:` figure out if the localhost website can be embedded in regular HTTPS pages
 
 

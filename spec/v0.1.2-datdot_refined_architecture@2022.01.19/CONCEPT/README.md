@@ -1,5 +1,91 @@
 # CONCEPT
 
+
+@TODO:
+* [ ] describe webkernel + web server spec
+* [ ] describe wallet spec
+* [ ] describe vault spec
+* [ ] describe gateway spec
+* [ ] describe shim spec
+@TODO: later
+* [ ] describe app/system spec
+
+
+```js
+/*
+// @TODO:
+=> check what is VAULT.md
+=> while solving WALLET.md#CREATE (A/B/C/D)
+   => to figure out how to connect to VAULTS
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
+// @TODO: merge/mark architecture process
+// ----------------------------
+ENVIRONMENTS:
+// ----------------------------
+1. NATIVE OPERATING SYSTEM
+  * CUSTOM OS
+  * CUSTOM HYPER OS
+  * CUSTOM DATDOT HYPER OS
+2. SHIMMED DESKTOP SYSTEM
+3. SAME DEVICE EXTERNAL CLIENT (e.g APP TAB)
+4. EXTERNAL DEVICE CLIENT
+5. (EXTERNAL?) TERMINAL
+
+
+// @TODO: merge/mark architecture process
+// ----------------------------
+SITUATION/SCENARIOS:
+// ----------------------------
+1. running system
+2. just vault
+3. with hardware wallet
+4. remote device app
+5. system vault + remote wallet
+6. app inside datdot.org
+7. app in different browser tab
+8. app on datdotOS desktop
+9. app on phone browser
+
+
+// ----------------------------
+ARCHITECTURE PROCESS
+// ----------------------------
+1. HARDWARE
+  * user triggers install
+  * user provides config input
+2. KERNEL SHIMS
+  * web view + web server
+3. WEB KERNEL
+4. SYSTEM INIT_STARTUP (index.html+index.js)
+  * user provides config input (provision?)
+5. SYSTEM_init_process+restart
+6. LOGIN_SCREEN_init
+7. LOGIN_SCREEN_restartup
+8. APP_init
+  * app pairing
+  * app paired
+9. APP_restore/restart
+
+// ----------------------------
+USER SECURITY
+// ----------------------------
+1. VAULT SETUP/START
+2. WALLET SETUP/STARTUP
+3. VAULT/WALLET/KERNEL Pairing
+
+
+// ----------------------------
+SETUP/STARTUP PROTOCOLS
+DATA VAULT WALLET FEED SYSTEM
+WEBKERNEL+SYSTEM (STARTUP) CODE
+
+*/
+```
 ## ROLES - assignment of ROLES needs to have a PEERS SET to select from
 NODES come and go, so having role assignment per SESSION (=time window) or a ROLLING algorithm is important
 

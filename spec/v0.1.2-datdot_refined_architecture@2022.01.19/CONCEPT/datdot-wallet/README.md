@@ -1,6 +1,9 @@
 # wallet
 **[main](../README.md)**
 
+@TODO:
+* [ ] describe wallet spec
+
 # SCENARIO
 ```js
 // ----------------------------------------------------------------------------

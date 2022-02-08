@@ -2,6 +2,9 @@
 cross-platform electron menubar app or similar to enable all features needed by datdot
 
 
+@TODO:
+* [ ] describe shim spec
+
 # `playproject-io/datdot-electron`
 
 ### 2. ELECTRON - `playproject-io/datdot-electron`

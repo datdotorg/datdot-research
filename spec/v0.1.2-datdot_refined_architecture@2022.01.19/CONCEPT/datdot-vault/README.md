@@ -1,6 +1,9 @@
 # datdot-vault
 standalone user account management
 
+@TODO:
+* [ ] describe vault spec
+
 
 # `playproject-io/datdot-vault`
 
