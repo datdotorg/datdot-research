@@ -1,6 +1,9 @@
-# datdot `v0.0.6-formalizedSummary@2019-11-12`
+# datdot `v0.0.7-grantMergeAccept@2019-12-04`
+[(grant merge happened 2019-11-25)](https://github.com/w3f/Web3-collaboration/pull/178)
 
-**=> [previous spec](./v0.0.5-summary@2019-10-29.md)**
+**=> [previous spec](../v0.0.6-formalizedSummary@2019.11.08/)**
+**=> [next spec](../v0.0.8-datdotArchitecture@2021.09.20/)**
+
 
 ---
 slideOptions:
@@ -97,13 +100,15 @@ malicious users can still cheat the `datdot` network
 
 ----
 
-### issue [`self service attack`](#/1)
+### fix [`self service attack`](#/1)
 Assign hypercores submitted to `datdot` for seeding to random seeder peers, so peers who want to seed cannot cherry pick the chunks they want to seed.
+In order to prevent malicious user to accumulate node pairs they control where the randomly picked seeder happened to be under their control too, re-enabeling the self-service attack, we frequently enough re-shuffle which nodes seeds which data.
 
 ----
 
-### issue [`sybil & outsourcing attack`](#/1)
-every copy of very chunk of every hypercore seeded by the `datdot` network should be encrypted with a private key unavailable to the seeding peers, so they can not use the `sybil` or `outsourcing` attack anymore.
+### fix [`sybil & outsourcing attack`](#/1)
+every copy of every chunk of every hypercore seeded by the `datdot` network should be encrypted with a private key unavailable to the seeder, so they can't use the `sybil` or `outsourcing` attack, thus replacing each chunk with **a recoverable signature containing the entire chunk** and merkelizing it. The random encryption is renewed frequently enough to prevent attackers from accumulating nodes where they by chance where chosen to provide the encryption key.
+
 
 ---
 

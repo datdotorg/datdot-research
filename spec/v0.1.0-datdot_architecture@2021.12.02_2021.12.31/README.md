@@ -1,6 +1,10 @@
 # DATDOT NODE SPEC
 
-**=> [previous spec](../v0.0.9-datdotArchitectureMerger@2021-10-15_2021-11-03/README.md)**
+**=> [previous spec](../v0.0.9-datdotArchitectureMerger@2021.10.15_2021.11.03/)**
+**=> [next spec](../v0.1.1-datdot_merged_architecture@2022.01.18/)**
+
+## `@todo`
+* [x] include details from previous spec (v0.0.9) in this version
 
 ## Pitch: filecoin for dat/hypercore
 bridge (between Dat Protocol and Substrate)

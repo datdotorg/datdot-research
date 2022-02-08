@@ -1,6 +1,8 @@
 # DATDOT NODE SPEC
 
-**=> [previous spec](../v0.0.8-datdotArchitecture@2021-09-20/README.md)**
+**=> [previous spec](../v0.0.8-datdotArchitecture@2021.09.20/)**
+**=> [next spec](../v0.1.0-datdot_architecture@2021.12.02_2021.12.31/)**
+
 
 ## @TODO: merge this information into next iteration of the spec
 * [x] include details from previous spec iterations:
