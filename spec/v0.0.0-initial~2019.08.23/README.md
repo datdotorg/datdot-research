@@ -1,6 +1,6 @@
-# datdot `v0.0.0-initial@2019-08-23`
+# datdot `v0.0.0-initial~2019-08-23`
 
-**=> [next spec](../v0.0.1-grantPreparation@2019.09.10/)**
+**=> [next spec](../v0.0.1-grantPreparation~2019.09.10/)**
 
 ## P2P hosting jam :-)
 **use**

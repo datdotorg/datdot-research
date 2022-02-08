@@ -1,7 +1,7 @@
 # DATDOT NODE SPEC
 
-**=> [previous spec](../v0.1.0-datdot_architecture@2021.12.02_2021.12.31/)**
-**=> [next spec](../v0.1.2-datdot_refined_architecture@2022.01.19_2022.??.??/)**
+**=> [previous spec](../v0.1.0-datdot_architecture~2021.12.02_2021.12.31/)**
+**=> [next spec](../v0.1.2-datdot_refined_architecture~2022.01.19_2022.??.??/)**
 
 ## `@todo`
 * [x] include details from previous spec (v0.1.0) in this version

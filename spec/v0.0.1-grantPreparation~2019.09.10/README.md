@@ -1,7 +1,7 @@
-# datdot `v0.0.1-grantPreparation@2019-09-10`
+# datdot `v0.0.1-grantPreparation~2019-09-10`
 
-**=> [previous spec](../v0.0.0-initial@2019.08.23/)**
-**=> [next spec](../v0.0.2-grantProposal@2019.09.18/)**
+**=> [previous spec](../v0.0.0-initial~2019.08.23/)**
+**=> [next spec](../v0.0.2-grantProposal~2019.09.18/)**
 
 # GRANT - Filecoin for Dat protocol
 - substrate node

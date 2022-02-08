@@ -1,10 +1,23 @@
 # DATDOT NODE SPEC
 
-**=> [previous spec](../v0.0.9-datdotArchitectureMerger@2021.10.15_2021.11.03/)**
-**=> [next spec](../v0.1.1-datdot_merged_architecture@2022.01.18/)**
+**=> [previous spec](../v0.0.8-datdotArchitecture~2021.09.20/)**
+**=> [next spec](../v0.1.0-datdot_architecture~2021.12.02_2021.12.31/)**
 
-## `@todo`
-* [x] include details from previous spec (v0.0.9) in this version
+
+## @TODO: merge this information into next iteration of the spec
+* [x] include details from previous spec iterations:
+  * [x] v0.0.8
+    * [x] include information from `README.md`
+    * [x] include information from `./BRAINSTORMING`
+  * [x] v0.0.7
+  * [x] v0.0.6
+  * [x] v0.0.5
+  * [x] v0.0.4
+  * [x] v0.0.3
+  * [x] v0.0.2
+  * [x] v0.0.1
+  * [x] v0.0.0
+
 
 ## Pitch: filecoin for dat/hypercore
 bridge (between Dat Protocol and Substrate)
@@ -29,26 +42,15 @@ A decentralized bridge between Dat Protocol and Substrate with a built-in incent
 
 
 ## ARCHITECTURE
-1. [chain (substrate node)](./chain/README.md)
-2. [service (javascript hyper based)](./service/README.md)
-3. [vault](./vault/README.md)
-4. [wallet](./wallet/README.md)
-5. [ui](./ui/README.md)
-
-browser online => most insecure (= things can change while you visit the page)
-browser localhost => more secure (= things won't change while you visit if you don't confirm)
-datdot app: electron webapp => still secure (= but custom browser we maintain - so careful)
-datdot app: electron process => full power while running (=we have to be most careful, it has access to the users system)
-datdot app: daemons => full power all the time (these are already defined in scope and mostly implemented)
+1. [chain (substrate node)](./ARCHITECTURE/chain/README.md)
+2. [service (javascript hyper based)](./ARCHITECTURE/service/README.md)
+3. [vault](./ARCHITECTURE/vault/README.md)
+4. [wallet](./ARCHITECTURE/wallet/README.md)
+5. [ui](./ARCHITECTURE/ui/README.md)
 
 ```js
 const chain = require('datdot-chain')
 const service = require('datdot-service')
 
-// @TODO: refine this
-
 chain(service(chain))
 ```
-
-![architecture-diagram](./architecture-diagram.png)
-
