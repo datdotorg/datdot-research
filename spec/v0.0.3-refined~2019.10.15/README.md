@@ -1,8 +1,8 @@
 # datdot `v0.0.3-refined~2019-10-15`
 (prepared between `2019-10-10 and 2019-10-15`)
 
-**=> [previous spec](../v0.0.2-grantProposal~2019.09.18/)**
-**=> [next spec](../v0.0.4-formalized~2019.10.19/)**
+* **=> [previous spec](../v0.0.2-grantProposal~2019.09.18/)**
+* **=> [next spec](../v0.0.4-formalized~2019.10.19/)**
 
 ## ADD IDEA OF `supporters`
 (first mentioned on 9th of October 2019)

@@ -1,7 +1,7 @@
 # DATDOT NODE ARCHITECTURE
 
-**=> [previous spec](../v0.0.7-grantMergeAccept~2019.12.04/)**
-**=> [next spec](../v0.0.9-datdotArchitectureMerger~2021.10.15_2021.11.03/)**
+* **=> [previous spec](../v0.0.7-grantMergeAccept~2019.12.04/)**
+* **=> [next spec](../v0.0.9-datdotArchitectureMerger~2021.10.15_2021.11.03/)**
 
 ## PARTS
 1. chain (substrate node)

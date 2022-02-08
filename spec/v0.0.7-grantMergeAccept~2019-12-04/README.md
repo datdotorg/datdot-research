@@ -1,8 +1,8 @@
 # datdot `v0.0.7-grantMergeAccept~2019-12-04`
 [(grant merge happened 2019-11-25)](https://github.com/w3f/Web3-collaboration/pull/178)
 
-**=> [previous spec](../v0.0.6-formalizedSummary~2019.11.08/)**
-**=> [next spec](../v0.0.8-datdotArchitecture~2021.09.20/)**
+* **=> [previous spec](../v0.0.6-formalizedSummary~2019.11.08/)**
+* **=> [next spec](../v0.0.8-datdotArchitecture~2021.09.20/)**
 
 
 ---

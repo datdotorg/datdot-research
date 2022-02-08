@@ -1,7 +1,7 @@
 # datdot `v0.0.5-summary~2019-10-29`
 
-**=> [previous spec](../v0.0.4-formalized~2019.10.19/)**
-**=> [next spec](../v0.0.6-formalizedSummary~2019.11.08/)**
+* **=> [previous spec](../v0.0.4-formalized~2019.10.19/)**
+* **=> [next spec](../v0.0.6-formalizedSummary~2019.11.08/)**
 
 ## economic model
 

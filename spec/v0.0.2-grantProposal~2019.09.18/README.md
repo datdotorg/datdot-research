@@ -2,8 +2,8 @@
 (prepared between `2019-09-13 and 2019-09-18`)
 **accepted:** `8th of October 2019`
 
-**=> [previous spec](../v0.0.1-grantPreparation~2019.09.10/)**
-**=> [next spec](../v0.0.2-grantProposal~2019.09.18/)**
+* **=> [previous spec](../v0.0.1-grantPreparation~2019.09.10/)**
+* **=> [next spec](../v0.0.2-grantProposal~2019.09.18/)**
 
 ## APPLICATION
 * [playproject-io/Web3-collaboration application fork](https://github.com/playproject-io/datdot-application-2019-11-25/blob/8af3b6f87c6f3da4141b7964f902be2d908c6f38/grants/targeted/datdot.md)

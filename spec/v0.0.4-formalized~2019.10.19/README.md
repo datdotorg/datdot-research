@@ -1,8 +1,8 @@
 # datdot `v0.0.4-formalized~2019-10-19`
 (prepared between `2019-10-17 and 2019-10-19`)
 
-**=> [previous spec](../v0.0.3-refined~2019.10.15/)**
-**=> [next spec](../v0.0.5-summary~2019.10.29/)**
+* **=> [previous spec](../v0.0.3-refined~2019.10.15/)**
+* **=> [next spec](../v0.0.5-summary~2019.10.29/)**
 
 ## ADD IDEA OF `supporters`
 - data consumers (public)

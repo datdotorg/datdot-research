@@ -1,7 +1,7 @@
 # datdot `v0.0.6-formalizedSummary~2019-11-12`
 
-**=> [previous spec](../v0.0.5-summary~2019.10.29/)**
-**=> [next spec](../v0.0.7-grantMergeAccept~2019.12.04/)**
+* **=> [previous spec](../v0.0.5-summary~2019.10.29/)**
+* **=> [next spec](../v0.0.7-grantMergeAccept~2019.12.04/)**
 
 ---
 slideOptions:
