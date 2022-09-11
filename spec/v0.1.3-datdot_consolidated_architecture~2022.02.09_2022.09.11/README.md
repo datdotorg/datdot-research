@@ -4,21 +4,12 @@
 * **=> [next spec](../v0.1.4-datdot_architecture_optiimization~2022.09.11_2022.XX.XX)**
 
 ## `@todo`
-* [x] include details from previous spec (v0.1.1) in this version
+* [x] include details from previous spec (v0.1.2) in this version
   * [x] set architecture based on `CONCEPTS` folder evaluation and content of this file
 * [x] merge/mark architecture process
 * [x] cleanup the README and move all content in here to the modules it belongs to
   * [x] consolidate RESEARCH
-  * [ ] update readme architecture summary
-  * [ ] create local table of content by updating the one below to lini each architecture section in readme
-  * [ ] add links to more details about each architecture section
-  * [ ] add per research file todos
-* [ ] write multiple pages with tests!
-* [ ] name the local repo with the localhost servers to test against!
-* [ ] ask ppl with windows and macOS to try it out
-* [ ] test SAFARI:
-  * [ ] no BroadcastChannel?
-  * [ ] no SharedWorker?
+* [x] move remaining todos to next spec version
 
 ## ARCHITECTURE - TABLE OF CONTENT
 // @TODO: update this table of content

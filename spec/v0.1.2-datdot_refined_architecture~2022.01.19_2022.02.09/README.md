@@ -5,15 +5,7 @@
 
 ## `@todo`
 * [x] include details from previous spec (v0.1.1) in this version
-
-@TODO:
-* [ ] describe webkernel + web server spec
-* [ ] describe wallet spec
-* [ ] describe vault spec
-* [ ] describe gateway spec
-* [ ] describe shim spec
-@TODO: later
-* [ ] describe app/system spec
+* [x] move remaining todos to next spec version
 
 
 ```js
